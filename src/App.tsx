@@ -1,5 +1,5 @@
-import React from "react";
-import { PokemonCard } from "./components";
+import React from 'react';
+import { PokemonCard } from './components';
 import { PokemonTypesEnum } from './types';
 
 const gengar = {
@@ -16,10 +16,10 @@ const App = () => {
   return (
     <div>
       <div>Hello PokeFederations (ui-components)</div>
-      <PokemonCard 
-        pokemon={gengar} 
+      <PokemonCard
+        pokemon={gengar}
         onNameClick={(id) => console.log({ id })}
-        onTypeClick={(type) => console.log({ type })} 
+        onTypeClick={(type) => console.log({ type })}
       />
     </div>
   );

@@ -5,18 +5,17 @@ import createCache from '@emotion/cache';
 import { defaultTheme } from '../themes';
 
 export const muiCache = createCache({
-    key: 'mui',
-    prepend: true,
-  });  
+  key: 'mui',
+  prepend: true,
+});
 
 type TThemeProviderProps = {
-    children: React.ReactNode;
-}
-const ThemeProvider = ({ children }: TThemeProviderProps) => 
-    <CacheProvider value={muiCache}>
-        <MuiThemeProvider theme={defaultTheme}>
-            {children}
-        </MuiThemeProvider>
-    </CacheProvider>
+  children: React.ReactNode;
+};
+const ThemeProvider = ({ children }: TThemeProviderProps) => (
+  <CacheProvider value={muiCache}>
+    <MuiThemeProvider theme={defaultTheme}>{children}</MuiThemeProvider>
+  </CacheProvider>
+);
 
 export default ThemeProvider;
