@@ -13,6 +13,7 @@ const moduleFederationConfig = {
     "./ThemeProvider": "./src/providers/ThemeProvider.tsx",
     
     "./Button": "./src/components/Button.tsx",
+    "./Grid": "./src/components/Grid.tsx",
     "./Typography": "./src/components/Typography.tsx",
     "./PokemonType": "./src/components/PokemonType.tsx",
 
